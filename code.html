@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Casa Interior Design | Crafting Your Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-container": "#a76300",
+                "surface-variant": "#e3e2e2",
+                "primary-fixed": "#e2e2e2",
+                "tertiary-container": "#fff9f7",
+                "tertiary": "#8a5100",
+                "on-surface": "#1b1c1c",
+                "secondary-fixed-dim": "#c8c6c5",
+                "outline-variant": "#c4c7c8",
+                "on-error": "#ffffff",
+                "surface-container-high": "#e9e8e7",
+                "inverse-surface": "#303031",
+                "tertiary-fixed-dim": "#ffb86f",
+                "primary": "#5d5f5f",
+                "surface-dim": "#dbdad9",
+                "on-background": "#1b1c1c",
+                "on-tertiary": "#ffffff",
+                "surface-tint": "#5d5f5f",
+                "primary-container": "#fafafa",
+                "on-tertiary-fixed": "#2c1600",
+                "on-secondary": "#ffffff",
+                "error": "#ba1a1a",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-container": "#656464",
+                "on-secondary-fixed": "#1b1c1c",
+                "background": "#fbf9f9",
+                "secondary-fixed": "#e4e2e1",
+                "secondary": "#5f5e5e",
+                "surface-container": "#efeded",
+                "inverse-primary": "#c6c6c7",
+                "on-primary-fixed": "#1a1c1c",
+                "surface-container-low": "#f5f3f3",
+                "on-secondary-fixed-variant": "#474746",
+                "surface": "#fbf9f9",
+                "on-surface-variant": "#444748",
+                "inverse-on-surface": "#f2f0f0",
+                "error-container": "#ffdad6",
+                "on-error-container": "#93000a",
+                "on-primary-fixed-variant": "#454747",
+                "surface-bright": "#fbf9f9",
+                "tertiary-fixed": "#ffdcbd",
+                "secondary-container": "#e4e2e1",
+                "primary-fixed-dim": "#c6c6c7",
+                "on-primary": "#ffffff",
+                "accent-gold": "#FF9900"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "margin-mobile": "24px",
+                "section-gap": "160px",
+                "margin-tablet": "40px",
+                "gutter": "32px",
+                "container-max": "1440px",
+                "margin-desktop": "80px",
+                "unit": "8px"
+            },
+            "fontFamily": {
+                "display-lg-mobile": ["Plus Jakarta Sans"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "body-md": ["Plus Jakarta Sans"],
+                "headline-xl": ["Plus Jakarta Sans"],
+                "headline-lg": ["Plus Jakarta Sans"],
+                "label-caps": ["Plus Jakarta Sans"],
+                "display-lg": ["Plus Jakarta Sans"],
+                "button": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+                "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                "button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #fbf9f9;
+            color: #1b1c1c;
+            -webkit-font-smoothing: antialiased;
+        }
+        .hero-clip {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        @media (max-width: 768px) {
+            .hero-clip { clip-path: none; }
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg font-semibold text-on-surface dark:text-inverse-on-surface tracking-tighter">
+                Casa Interior Design
+            </div>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant dark:text-surface-variant hover:text-tertiary transition-colors duration-300" href="#">Packages</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant dark:text-surface-variant hover:text-tertiary transition-colors duration-300" href="#">Projects</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant dark:text-surface-variant hover:text-tertiary transition-colors duration-300" href="#">Reviews</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant dark:text-surface-variant hover:text-tertiary transition-colors duration-300" href="#">About Us</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant dark:text-surface-variant hover:text-tertiary transition-colors duration-300" href="#">Contact</a>
+<button class="ml-4 px-6 py-3 bg-[#FF9900] text-white font-button text-button rounded-lg active:scale-95 duration-200 transition-transform">
+                    Book Consultation
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Singapore HDB BTO renovation hero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrOAhNlDxq05Dy31Y23qiGZBWe3gCjppdyBFnQiYV7PME1_7Z3pAFX7u7A6qA4vw9juntFHkxP9pyZjl69vzYMhCxJKMQWi6sH4_Q1tYZsQuBI_cOvQrkbQ4ycHqAYrvM1LPs-jJXH8ldoH9MRcD70VqsZYrjDRY-vSHVV6aBVPsKl6zVKyWIchcjMKdQoiGNHAOJ4URLciJGMo9zTb7m6aJMK_jY_1dIF-_9SCmXvZ3SkDCd88eyBYwSYpyVpe9XJLn4Nd_elt4s"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-7 flex flex-col justify-center items-start">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.3em] text-[#FF9900] mb-6 block" data-aos="fade-up">Architectural Excellence</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8 max-w-2xl leading-tight">
+                        Crafting Your <span class="italic font-light">Sanctuary</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-lg">
+                        Award-winning luxury interior design for modern Singapore homes. We transform standard layouts into bespoke living experiences.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="px-8 py-5 bg-[#262626] text-white font-button text-button rounded-lg hover:bg-black transition-all shadow-xl shadow-black/5 flex items-center gap-3">
+                            Book a Consultation
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="px-8 py-5 border border-outline text-on-surface font-button text-button rounded-lg hover:bg-surface-container transition-all">
+                            View Portfolio
+                        </button>
+</div>
+</div>
+</div>
+<!-- Architectural Accent -->
+<div class="absolute bottom-0 right-0 hidden md:block w-1/3 h-2 bg-[#FF9900]"></div>
+</section>
+<!-- Stats / Proof Points -->
+<section class="bg-surface py-20 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto border-y border-outline-variant/30 py-12 flex flex-wrap justify-between items-center gap-12">
+<div class="flex flex-col">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">500+</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Homes Completed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">12</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Design Awards</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">100%</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Client Satisfaction</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">HDB</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Certified Firm</span>
+</div>
+</div>
+</section>
+<!-- Packages Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-white rounded-[2rem] shadow-2xl shadow-black/[0.02] my-10">
+<div class="text-center mb-24">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-4 block">Design Solutions</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Curated Renovation Packages</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Package 1 -->
+<div class="group relative flex flex-col h-full bg-surface-container-low p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-black/5">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A serene minimalist bedroom in a new Singapore BTO flat. The room features a clean off-white color palette with natural light wood accents. Soft ambient lighting illuminates a low-profile bed with white linens and a simple round wooden bedside table. The overall mood is airy, tranquil, and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvEWph_QPYiKUWQulnbyBHRnZX10uraodOQLsDmEg_QdiWX0hS6yJlf1o-nEMq9tlJHoa785nCTfZ-l8ejq31BOgN2sXQ2-4LgpdYSmaROmokixypJ_BOVZAChSPTmZ77Fsl2aDPrmMdFIw9xMO3P4U9vCzZIBzU3L_AwR-MPafdA5XmxzxlPBLz2NcEcOWJp62_IsKUzXouttQ49uOcvM7UberTICjAXjoant0l6kmkWzSGK-_u9kKdXNnT4ov-q8uvtQfRRqpzg"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-4 py-1 rounded-full font-label-caps text-[10px] uppercase tracking-wider text-on-surface">Bestseller</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-3">The Essential BTO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Curated minimalist design for new homeowners. Focusing on clean lines and functional beauty for standard 3, 4, and 5-room layouts.
+                    </p>
+<div class="pt-6 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-[#FF9900]">Learn More</span>
+<span class="material-symbols-outlined text-[#FF9900] group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<!-- Package 2 - Featured (Luxe) -->
+<div class="group relative flex flex-col h-full bg-[#262626] text-white p-8 rounded-xl transition-all duration-500 md:-translate-y-12 hover:-translate-y-16 hover:shadow-2xl shadow-xl">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A high-end luxury living room featuring dark charcoal wood paneling and gold trim accents. A large marble feature wall anchors the space with an integrated fireplace. The furniture consists of premium velvet sofas in slate gray and a geometric brass coffee table. Lighting is sophisticated and moody with warm recessed spotlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_U1ZXqNXOQBnx3lZvhhJowQQ2rjeYkN6ReSD22y5bJsGlACNe7ySlQYYtUVTNXPo3lze-Ud6j_jgtdt2snZSUmo4o5bmS-BKCI6mnsGQA7gXA0xHpDhgp3KGtPQ4T9aoJJUSBvU8vNfhL6P6NSWagIZDvqfyzJISNSEiwq_raxwdj1x8JdLuDBtth3RY7lA-ni0Oq2LjN8ZT42xRbj5EXtSMDHykUitsAlOSuVyH4F9trTCtG7fOWsSak7v50i95lw5BCGwmneDw"/>
+<div class="absolute top-4 left-4 bg-[#FF9900] px-4 py-1 rounded-full font-label-caps text-[10px] uppercase tracking-wider text-white">Premium Choice</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-white mb-3">The Luxe Signature</h3>
+<p class="font-body-md text-body-md text-surface-variant mb-8 flex-grow">
+                        Premium materials and bespoke cabinetry tailored to your lifestyle. Includes marble finishes and smart home integration.
+                    </p>
+<div class="pt-6 border-t border-outline-variant/10 flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-[#FF9900]">Detailed Quote</span>
+<span class="material-symbols-outlined text-[#FF9900] group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group relative flex flex-col h-full bg-surface-container-low p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-black/5">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A dramatic before and after transformation of an old kitchen into a modern industrial space. The design uses dark grey fluted cabinetry, a quartz countertop island, and open black metal shelving. The space is brightened by large industrial windows and warm under-cabinet LED strips. The aesthetic is raw yet refined and expensive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5eXrT9lXM7-VzvmKEvN13RvlQyTHK5SlF8wrYLonV37uTjJFt1oKBdifjM5NmVazn92T2uD4XW73ijzjeyTxolCRxLIa47THBjlXj1ecVTmNiDXJ8rgKtgvh36GxKCRHhwEjxv8LYFwMtxfDs4_e05j7-8_Jjaaz65baIiTcVxYAzaTSKq24a0KghK5motenAiQZzrAnwVdJCzMKUdmGfU_mRns7Pw1oWZskvrFM_6Hk4JjTr6X1qyupao-C2hSjTxPQPPSPA-JM"/>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-3">The Resale Transformation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Comprehensive overhaul for mature estates. Re-imagining older spaces with modern engineering and timeless architectural flair.
+                    </p>
+<div class="pt-6 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-[#FF9900]">See Portfolio</span>
+<span class="material-symbols-outlined text-[#FF9900] group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="bg-surface-container-high p-16 md:p-24 rounded-3xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-[#FF9900]/5 rounded-full -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<h2 class="font-headline-xl text-headline-xl mb-6">Ready to design your sanctuary?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl mx-auto">
+                        Download our 2024 Design Trends Lookbook or book a private consultation with our award-winning lead architects.
+                    </p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow px-6 py-4 rounded-lg bg-white border border-outline-variant focus:border-[#FF9900] focus:ring-1 focus:ring-[#FF9900] outline-none transition-all" placeholder="Enter your email address" type="email"/>
+<button class="px-8 py-4 bg-[#FF9900] text-white font-button text-button rounded-lg hover:shadow-lg transition-all">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-4 mb-12 md:mb-0">
+<div class="font-headline-lg text-headline-lg text-on-surface dark:text-inverse-on-surface font-semibold mb-6">
+                    Casa Interior Design
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                    Creating bespoke living environments through a lens of architectural precision and minimalist luxury since 2012.
+                </p>
+<div class="flex gap-4 mt-8">
+<a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-on-surface hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-on-surface hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-on-surface hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-8">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-all underline-offset-4 hover:underline" href="#">Packages</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-all underline-offset-4 hover:underline" href="#">Projects</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-all underline-offset-4 hover:underline" href="#">Reviews</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-all underline-offset-4 hover:underline" href="#">About Us</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-8">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-all underline-offset-4 hover:underline" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-all underline-offset-4 hover:underline" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-all underline-offset-4 hover:underline" href="#">Press Kit</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-all underline-offset-4 hover:underline" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-8">Visit Our Studio</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    123 Architectural Way, #04-01<br/>
+                    Singapore 123456
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Mon - Sat: 10:00 AM - 7:00 PM<br/>
+                    Sunday: By Appointment
+                </p>
+</div>
+<div class="md:col-span-12 mt-20 pt-10 border-t border-outline-variant/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
+<span class="font-body-md text-body-md text-on-surface-variant">© 2024 Casa Interior Design. Architectural Excellence.</span>
+<span class="font-label-caps text-label-caps uppercase text-[#FF9900] tracking-widest">Crafting Sanctuaries</span>
+</div>
+</div>
+</footer>
+<!-- FAB -->
+<button class="fixed bottom-margin-mobile right-margin-mobile w-14 h-14 bg-[#FF9900] text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-40 group">
+<span class="material-symbols-outlined text-[28px]">calendar_month</span>
+<span class="absolute right-full mr-4 bg-[#262626] text-white px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-all">Book Consultation</span>
+</button>
+<script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.add('py-6');
+                nav.classList.remove('py-4');
+            }
+        });
+    </script>
+</body></html>
